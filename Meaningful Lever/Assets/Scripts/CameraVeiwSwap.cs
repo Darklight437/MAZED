@@ -4,19 +4,6 @@ using UnityEngine;
 
 public class CameraVeiwSwap : MonoBehaviour
 {
-    [System.Serializable]
-    public class StartPointInfo
-    {
-        public StartPointInfo(Vector3 pos, Quaternion rot)
-        {
-            position = pos;
-            rotation = rot;
-        }
-
-        public Vector3 position;
-        public Quaternion rotation;
-    }
-
     public Camera cam;
 
     public Transform thirdPerson;
@@ -27,7 +14,7 @@ public class CameraVeiwSwap : MonoBehaviour
 
     public bool isTopDown = false;
 
-    public StartPointInfo m_lerpStartPoint;
+    public Vector3 m_lerpStartPoint;
     private Transform m_lerpEndPoint;
 
 	// Use this for initialization
@@ -35,8 +22,6 @@ public class CameraVeiwSwap : MonoBehaviour
     {
         cam = Camera.main;
         m_timeSpentLerping = 1.2f;
-
-        m_lerpStartPoint = new StartPointInfo(Vector3.zero, Quaternion.identity);
 
         if (isTopDown == false)
         {
@@ -69,6 +54,7 @@ public class CameraVeiwSwap : MonoBehaviour
         else
         {
             m_lerpEndPoint = topDown;
+            cam.orthographic = true;
         }
 
         if (m_timeSpentLerping < 1)
@@ -77,12 +63,8 @@ public class CameraVeiwSwap : MonoBehaviour
             {
                 transform.rotation = Quaternion.Lerp(cam.transform.rotation, m_lerpEndPoint.rotation, m_timeSpentLerping * 0.5f);
             }
-            else
-            {
-                transform.rotation = Quaternion.Lerp(cam.transform.rotation, Quaternion.Euler(90, 0, 0), m_timeSpentLerping * 0.5f);
-            }
 
-            transform.position = Vector3.Lerp(m_lerpStartPoint.position, m_lerpEndPoint.position, m_timeSpentLerping);
+            transform.position = Vector3.Lerp(m_lerpStartPoint, m_lerpEndPoint.position, m_timeSpentLerping);
         }
         else
         {
@@ -103,9 +85,17 @@ public class CameraVeiwSwap : MonoBehaviour
     {
         isTopDown = !isTopDown;
 
-        m_lerpStartPoint.position = cam.transform.position;
-        m_lerpStartPoint.rotation = cam.transform.rotation;
-        cam.orthographic = false;
+        if (isTopDown == false)
+        {
+            cam.orthographic = false;
+        }
+        else
+        {
+            cam.transform.rotation = Quaternion.Euler(90, 0, 0);
+            cam.orthographic = true;
+        }
+
+        m_lerpStartPoint = cam.transform.position;
         m_timeSpentLerping = 0;
     }
 }
