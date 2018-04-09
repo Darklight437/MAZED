@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraVeiwSwap : MonoBehaviour
 {
     public Camera cam;
+    public GameObject player;
 
     public Transform thirdPerson;
     public Transform topDown;
@@ -88,11 +89,13 @@ public class CameraVeiwSwap : MonoBehaviour
         if (isTopDown == false)
         {
             cam.orthographic = false;
+            player.layer = LayerMask.NameToLayer("3D");
         }
         else
         {
-            cam.transform.rotation = Quaternion.Euler(90, 0, 0);
+            cam.transform.rotation = Quaternion.Euler(89.99f, 0, 0);
             cam.orthographic = true;
+            player.layer = LayerMask.NameToLayer("2D");
         }
 
         m_lerpStartPoint = cam.transform.position;
