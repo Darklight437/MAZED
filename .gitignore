@@ -36,3 +36,5 @@ sysinfo.txt
 *.log
 Meaningful Lever/Library/shadercompiler-UnityShaderCompiler.exe0.log
 Meaningful Lever/Assets/Scripts.meta
+Meaningful Lever/ProjectSettings/DynamicsManager.asset
+Meaningful Lever/ProjectSettings/TagManager.asset
