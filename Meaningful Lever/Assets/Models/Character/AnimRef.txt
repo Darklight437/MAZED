@@ -1,0 +1,19 @@
+Amazing Game
+AssetList
+
+Character
+Main Character
+
+Environment
+Sandstone walls
+Sand Floor
+Doors
+
+
+
+Animations:
+Run 1 - 24
+Jump 26 - 80
+Aim 82 - 130
+Throw 132 - 137 - 170
+Idle 172 - 260
