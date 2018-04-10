@@ -84,16 +84,30 @@ public class MapEditorScript : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                GameObject go = Instantiate(tileObj, hit.collider.transform.position, Quaternion.identity);
-                go.transform.SetParent(world.transform);
-
-                Transform topTransform = hit.transform.parent != null ? hit.transform.parent : hit.transform;
-
-                foreach (Transform tran in topTransform)
+                if (Event.current.button == 0)
                 {
-                    DestroyImmediate(hit.transform.gameObject);
+                    GameObject go = Instantiate(tileObj, hit.collider.transform.position, Quaternion.identity);
+                    go.transform.SetParent(world.transform);
+
+                    Transform topTransform = hit.transform.parent != null ? hit.transform.parent : hit.transform;
+
+                    foreach (Transform tran in topTransform)
+                    {
+                        DestroyImmediate(hit.transform.gameObject);
+                    }
+                    DestroyImmediate(topTransform.gameObject);
                 }
-                DestroyImmediate(topTransform.gameObject);
+                else
+                {
+                    GameObject go = Instantiate(tileObj, new Vector3(hit.point.x + ((hit.point.x % 3) > 1.5f ?  3- hit.point.x % 3 : 0 - hit.point.x % 3), 
+                                                                    hit.point.y  + ( 0 - (hit.point.y % 3)), 
+                                                                    hit.point.z + ((hit.point.z % 3) > 1.5f ? 3 - hit.point.z % 3 : 0 - hit.point.z % 3)),
+                                                                    Quaternion.identity);
+                    go.transform.SetParent(world.transform);
+                }
+
+                Debug.Log("X point: " + hit.point.x + " : " +  ((hit.point.x % 3) > 1.5f ? 3 - hit.point.x % 3 : 0 - hit.point.x % 3));
+                Debug.Log("Z point: " + hit.point.z + " : " + ((hit.point.z % 3) > 1.5f ? 3 - hit.point.z % 3 : 0 - hit.point.z % 3));
             }
         }
     }
