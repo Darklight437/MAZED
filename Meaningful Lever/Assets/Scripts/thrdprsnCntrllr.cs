@@ -76,6 +76,10 @@ namespace CharControl
                 Debug.Log("moving");
                 m_Animator.SetBool("run", true);
             }
+            else
+            {
+
+            }
 
 
 
