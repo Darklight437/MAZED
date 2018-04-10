@@ -71,7 +71,11 @@ namespace CharControl
         void updatePosition(Vector3 move)
         {
             //set the animator states in here
-
+            if (move != Vector3.zero)
+            {
+                Debug.Log("moving");
+                m_Animator.SetBool("run", true);
+            }
 
 
 
@@ -101,7 +105,7 @@ namespace CharControl
         {
             if (jump && m_IsGrounded)
             {
-                Debug.Log("worked");
+               // Debug.Log("worked");
                 m_Animator.SetBool("jump", true);
                 m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
                 m_IsGrounded = false;
@@ -122,14 +126,14 @@ namespace CharControl
             // it is also good to note that the transform position in the sample assets is at the base of the character
             if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
             {
-                Debug.Log("IF is good");
+                //Debug.Log("IF is good");
                 m_GroundNormal = hitInfo.normal;
                 m_IsGrounded = true;
                 //m_Animator.applyRootMotion = true;
             }
             else
             {
-                Debug.Log("if failed");
+                //Debug.Log("if failed");
                 m_IsGrounded = false;
                 m_GroundNormal = Vector3.up;
                 //m_Animator.applyRootMotion = false;
