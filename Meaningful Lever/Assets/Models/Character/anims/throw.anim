@@ -21,6 +21,192 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
+        value: 25.134497
+        inSlope: 0.075416505
+        outSlope: 0.075416505
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5833335
+        value: 22.997349
+        inSlope: -3.8932028
+        outSlope: -3.8932028
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.AnkleCloth.L
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 351.0882
+        outSlope: 351.0882
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666985
+        value: 14.628787
+        inSlope: 501.55286
+        outSlope: 501.55286
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333349
+        value: 41.79608
+        inSlope: 501.55145
+        outSlope: 501.55145
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 56.424583
+        inSlope: 175.5427
+        outSlope: 175.5427
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666698
+        value: 56.424583
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 56.424583
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0833335
+        value: 54.000072
+        inSlope: -105.79649
+        outSlope: -105.79649
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.25
+        value: 17.85309
+        inSlope: -232.75127
+        outSlope: -232.75127
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.291667
+        value: 8.816281
+        inSlope: -185.14284
+        outSlope: -185.14284
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.3333335
+        value: 2.424476
+        inSlope: -105.79578
+        outSlope: -105.79578
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.375
+        value: 0
+        inSlope: -58.187645
+        outSlope: -58.187645
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.Poncho1.RightMiddle
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666985
+        value: 0
+        inSlope: 0.000000005202804
+        outSlope: 0.000000005202804
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333349
+        value: 4.3356535e-10
+        inSlope: 278.0892
+        outSlope: 278.0892
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 23.174011
+        inSlope: 794.5383
+        outSlope: 794.5383
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666698
+        value: 66.21177
+        inSlope: 794.53467
+        outSlope: 794.53467
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.20833349
+        value: 89.385475
+        inSlope: 278.08554
+        outSlope: 278.08554
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 89.385475
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.7083335
+        value: 89.385475
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.791667
+        value: 84.43402
+        inSlope: -212.64966
+        outSlope: -212.64966
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.916667
+        value: 35.18073
+        inSlope: -437.8062
+        outSlope: -437.8062
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.9583335
+        value: 17.720676
+        inSlope: -362.75354
+        outSlope: -362.75354
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 4.9513826
+        inSlope: -212.64825
+        outSlope: -212.64825
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.041667
+        value: 0
+        inSlope: -118.832275
+        outSlope: -118.832275
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.Poncho1.RightFront
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
         value: 0.013965292
         inSlope: 0.15444736
         outSlope: 0.15444736

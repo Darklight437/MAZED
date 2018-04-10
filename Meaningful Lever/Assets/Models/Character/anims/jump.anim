@@ -21,6 +21,252 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
+        value: 2.7265255
+        inSlope: 115.27579
+        outSlope: 115.27579
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666627
+        value: 9.606306
+        inSlope: 191.5581
+        outSlope: 191.5581
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.125
+        value: 28.027021
+        inSlope: 203.74698
+        outSlope: 203.74698
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.16666663
+        value: 35.66861
+        inSlope: 139.65341
+        outSlope: 139.65341
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.25
+        value: 41.120216
+        inSlope: 33.343307
+        outSlope: 33.343307
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.3333334
+        value: 50.837986
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9166666
+        value: 50.837986
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9583334
+        value: 50.837986
+        inSlope: -305.02908
+        outSlope: -305.02908
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: 25.418848
+        inSlope: -610.0564
+        outSlope: -610.0564
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.0416665
+        value: 0
+        inSlope: -289.785
+        outSlope: -289.785
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.0833335
+        value: 1.2701968
+        inSlope: 53.542675
+        outSlope: 53.542675
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.125
+        value: 4.4618983
+        inSlope: 88.51872
+        outSlope: 88.51872
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.2083335
+        value: 12.896462
+        inSlope: 91.631134
+        outSlope: 91.631134
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.25
+        value: 16.28269
+        inSlope: 59.76758
+        outSlope: 59.76758
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.AnkleCloth.L
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1.2647867e-12
+        inSlope: -292.6662
+        outSlope: -292.6662
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.041666627
+        value: 1.3094974
+        inSlope: 58.94082
+        outSlope: 58.94082
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.08333337
+        value: 4.911741
+        inSlope: 108.0939
+        outSlope: 108.0939
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.375
+        value: 53.21565
+        inSlope: 123.29826
+        outSlope: 123.29826
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: 63.73576
+        inSlope: 68.49428
+        outSlope: 68.49428
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.2916666
+        value: 91.48919
+        inSlope: 18.526722
+        outSlope: 18.526722
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.2083335
+        value: 99.98524
+        inSlope: 0.71163803
+        outSlope: 0.71163803
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.25
+        value: 100
+        inSlope: -1199.8275
+        outSlope: -1199.8275
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.AnkleCloth.R
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0.7083334
+        value: 5.19121e-11
+        inSlope: 243.35257
+        outSlope: 243.35257
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.75
+        value: 10.139681
+        inSlope: 288.26843
+        outSlope: 288.26843
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.7916666
+        value: 24.022346
+        inSlope: 261.58344
+        outSlope: 261.58344
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.8333334
+        value: 31.938303
+        inSlope: 196.38269
+        outSlope: 196.38269
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0833334
+        value: 73.49468
+        inSlope: 61.634007
+        outSlope: 61.634007
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.2083334
+        value: 74.86034
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.7500001
+        value: 74.86034
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.8333334
+        value: 69.31511
+        inSlope: -232.89914
+        outSlope: -232.89914
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9166666
+        value: 37.43017
+        inSlope: -432.52643
+        outSlope: -432.52643
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9583334
+        value: 19.408203
+        inSlope: -382.61926
+        outSlope: -382.61926
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: 5.5451703
+        inSlope: -232.89838
+        outSlope: -232.89838
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.0416665
+        value: 0
+        inSlope: -66.5423
+        outSlope: -66.5423
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.0833335
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2.25
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.Poncho1.RightFront
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
         value: 0.0004095321
         inSlope: -0.031312324
         outSlope: -0.031312324

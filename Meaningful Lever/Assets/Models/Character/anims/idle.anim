@@ -20,6 +20,52 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 2
+        time: 0
+        value: 22.656597
+        inSlope: -4.2879314
+        outSlope: -4.2879314
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.37500048
+        value: 20.684204
+        inSlope: -6.294216
+        outSlope: -6.294216
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.541667
+        value: 19.553072
+        inSlope: -11.290441
+        outSlope: -11.290441
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.666667
+        value: 16.106365
+        inSlope: -41.03082
+        outSlope: -41.03082
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.8750005
+        value: 8.193542
+        inSlope: -16.506271
+        outSlope: -16.506271
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.91666746
+        value: 7.821229
+        inSlope: -8.935433
+        outSlope: -8.935433
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.AnkleCloth.L
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
         time: 0.00000047683716
         value: 0.00053805055
         inSlope: -0.020662276

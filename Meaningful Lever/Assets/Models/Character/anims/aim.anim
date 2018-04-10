@@ -21,6 +21,56 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
+        value: 18.259254
+        inSlope: 9.008085
+        outSlope: 9.008085
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9999998
+        value: 25.12541
+        inSlope: 0.14665009
+        outSlope: 0.14665009
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.AnkleCloth.L
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.8333333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9999998
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: blendShape.Poncho1.RightFront
+    path: polySurface3
+    classID: 137
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
         value: 0.00087127363
         inSlope: -0.00976342
         outSlope: -0.00976342

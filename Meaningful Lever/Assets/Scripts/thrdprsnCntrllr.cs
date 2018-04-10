@@ -19,8 +19,8 @@ namespace CharControl
         Rigidbody m_Rigidbody;
         Animator m_Animator;
         CapsuleCollider m_Capsule;
-        float m_TurnAmount;
-        float m_ForwardAmount;
+        //float m_TurnAmount;
+        //float m_ForwardAmount;
         bool m_IsGrounded;
         float m_OrigGroundCheckDistance;
         float m_CapsuleHeight;
@@ -52,8 +52,8 @@ namespace CharControl
             move = transform.InverseTransformDirection(move);
             CheckGroundStatus();
             move = Vector3.ProjectOnPlane(move, m_GroundNormal);
-            m_TurnAmount = Mathf.Atan2(move.x, move.z);
-            m_ForwardAmount = move.z;
+            //m_TurnAmount = Mathf.Atan2(move.x, move.z);
+            //m_ForwardAmount = move.z;
 
             //movement will be identical in air or on ground but will have different animation handling
             if (m_IsGrounded)
