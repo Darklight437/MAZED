@@ -43,7 +43,7 @@ public class CameraVeiwSwap : MonoBehaviour
     {
         m_timeSpentLerping += Time.deltaTime ;
 
-        if (Input.GetKeyUp(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             SwapCameraView();
         }
