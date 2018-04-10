@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - ThrownItem
+  - Door
+  - Floor
+  - Wall
+  - FontWall
+  - Empty
   layers:
   - Default
   - TransparentFX

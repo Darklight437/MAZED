@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 65795645000543312}
   m_Layer: 0
   m_Name: Wall With Floor Roof 1
-  m_TagString: Untagged
+  m_TagString: FontWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
