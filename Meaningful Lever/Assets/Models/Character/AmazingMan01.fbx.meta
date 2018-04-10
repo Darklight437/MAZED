@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 90d7626c7725e964a8d6c9867348c9c8
-timeCreated: 1523321036
+timeCreated: 1523330774
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -697,11 +697,6 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: polySurface3
-      parentName: AmazingMan01(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Core
       parentName: AmazingMan01(Clone)
       position: {x: -0, y: 1.0119917, z: -0.078704186}
@@ -720,97 +715,12 @@ ModelImporter:
     - name: Clavicle
       parentName: BackTop
       position: {x: -8.625034e-16, y: 3.5527136e-17, z: 0.3134956}
-      rotation: {x: 1.4330153e-17, y: 0.23402914, z: 0.9722296, w: 5.953189e-17}
+      rotation: {x: 1.9697038e-17, y: 0.23402914, z: 0.9722296, w: 8.182759e-17}
       scale: {x: 1, y: 1, z: 1}
     - name: Head
       parentName: Clavicle
       position: {x: -6.0384694e-17, y: 0, z: 0.063988246}
       rotation: {x: 0.5358185, y: -0, z: -0, w: 0.8443332}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RShoulder
-      parentName: Clavicle
-      position: {x: 0.24127963, y: -0.104662746, z: -0.062389858}
-      rotation: {x: 0.39448214, y: 0.6068105, z: 0.3630166, w: 0.5868423}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RElbow
-      parentName: RShoulder
-      position: {x: -7.9936054e-17, y: 0, z: 0.344612}
-      rotation: {x: 0.009102433, y: -0.012928305, z: 0.0376272, w: 0.9991667}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RWrist
-      parentName: RElbow
-      position: {x: -7.105427e-17, y: -5.684342e-16, z: 0.3549598}
-      rotation: {x: -0.05698979, y: 0.038698636, z: -0.038901586, w: 0.99686575}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RMiddle
-      parentName: RWrist
-      position: {x: -6.217249e-17, y: 1.4210854e-16, z: 0.09401788}
-      rotation: {x: -0.019944679, y: -7.188694e-15, z: 2.303713e-15, w: 0.9998011}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RMiddleMid
-      parentName: RMiddle
-      position: {x: 8.881784e-18, y: 4.2632563e-16, z: 0.037582815}
-      rotation: {x: -0.0043490627, y: -6.9805277e-15, z: 1.9984017e-15, w: 0.9999906}
-      scale: {x: 1.1016257, y: 1, z: 1}
-    - name: RMiddleTip
-      parentName: RMiddleMid
-      position: {x: -2.8865798e-16, y: 4.2632563e-16, z: 0.037742864}
-      rotation: {x: -0.2792115, y: -0.18434732, z: -0.5192288, w: 0.7864213}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RRing
-      parentName: RWrist
-      position: {x: 0.024593856, y: 1.4210854e-16, z: 0.09401788}
-      rotation: {x: -0.019944679, y: -7.077672e-15, z: 2.2759572e-15, w: 0.9998011}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RRingMid
-      parentName: RRing
-      position: {x: 1.7763568e-17, y: 4.2632563e-16, z: 0.037582815}
-      rotation: {x: -0.0043490627, y: -6.973589e-15, z: 1.9984017e-15, w: 0.9999906}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RRingTip
-      parentName: RRingMid
-      position: {x: -3.5527136e-17, y: -2.842171e-16, z: 0.034261063}
-      rotation: {x: -0.282496, y: -0.17927353, z: -0.5049381, w: 0.79567236}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RPinky
-      parentName: RWrist
-      position: {x: 0.043948453, y: 1.4210854e-16, z: 0.09401788}
-      rotation: {x: -0.019944679, y: -7.181755e-15, z: 2.3314684e-15, w: 0.9998011}
-      scale: {x: 0.8764463, y: 1, z: 1}
-    - name: RPinkyMid
-      parentName: RPinky
-      position: {x: -0, y: 2.842171e-16, z: 0.03293932}
-      rotation: {x: -0.0043490627, y: -6.2450054e-15, z: 2.8310687e-15, w: 0.9999906}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RPinkyTip
-      parentName: RPinkyMid
-      position: {x: -4.2632563e-16, y: 5.684342e-16, z: 0.034261063}
-      rotation: {x: -0.282496, y: -0.17927353, z: -0.5049381, w: 0.79567236}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RIndex
-      parentName: RWrist
-      position: {x: -0.022616506, y: 0, z: 0.09401788}
-      rotation: {x: -0.019944679, y: -7.188694e-15, z: 2.3314684e-15, w: 0.9998011}
-      scale: {x: 0.95710343, y: 1, z: 1}
-    - name: RIndexMid
-      parentName: RIndex
-      position: {x: -5.3290704e-17, y: 4.2632563e-16, z: 0.035970643}
-      rotation: {x: -0.0043490627, y: -6.737667e-15, z: 2.3037132e-15, w: 0.9999906}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RIndexTip
-      parentName: RIndexMid
-      position: {x: -1.4210854e-16, y: 0, z: 0.034261063}
-      rotation: {x: -0.282496, y: -0.17927353, z: -0.5049381, w: 0.79567236}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RThumb
-      parentName: RWrist
-      position: {x: -0.061209545, y: -0.0050508515, z: 0.035885315}
-      rotation: {x: 0.071457475, y: -0.32853833, z: -0.082726665, w: 0.9381432}
-      scale: {x: 1, y: 1, z: 1}
-    - name: RThumbTip
-      parentName: RThumb
-      position: {x: 8.881784e-18, y: 4.2632563e-16, z: 0.031804983}
-      rotation: {x: -0.17266226, y: 0.6857024, z: -0.17266226, w: 0.6857024}
       scale: {x: 1, y: 1, z: 1}
     - name: LShoulder
       parentName: Clavicle
@@ -827,6 +737,21 @@ ModelImporter:
       position: {x: -1.7763568e-17, y: 0, z: 0.354961}
       rotation: {x: -0.05699314, y: -0.038700096, z: 0.03889903, w: 0.9968656}
       scale: {x: 1, y: 1, z: 1}
+    - name: LIndex
+      parentName: LWrist
+      position: {x: 0.0226165, y: 4.2632563e-16, z: 0.094017886}
+      rotation: {x: -0.019953428, y: 0.0000012286347, z: 0.000000024520356, w: 0.9998009}
+      scale: {x: 0.95710343, y: 1, z: 1}
+    - name: LIndexMid
+      parentName: LIndex
+      position: {x: 2.6645352e-17, y: 1.4210854e-16, z: 0.035970166}
+      rotation: {x: -0.004333231, y: -1.387779e-17, z: -1.6653347e-16, w: 0.99999064}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LIndexTip
+      parentName: LIndexMid
+      position: {x: 9.858781e-16, y: 0, z: 0.034260824}
+      rotation: {x: 0.7956704, y: 0.5049368, z: -0.1792771, w: 0.28250167}
+      scale: {x: 1, y: 1, z: 1}
     - name: LMiddle
       parentName: LWrist
       position: {x: 3.5527136e-17, y: 1.4210854e-16, z: 0.094017886}
@@ -841,21 +766,6 @@ ModelImporter:
       parentName: LMiddleMid
       position: {x: 5.062617e-16, y: 1.4210854e-16, z: 0.037742812}
       rotation: {x: 0.79625916, y: 0.51809436, z: -0.17052001, w: 0.26167262}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LRing
-      parentName: LWrist
-      position: {x: -0.024593899, y: 2.842171e-16, z: 0.094017886}
-      rotation: {x: -0.019944731, y: 0.0000012286349, z: 0.000000024509667, w: 0.9998011}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LRingMid
-      parentName: LRing
-      position: {x: -0, y: 0, z: 0.037582412}
-      rotation: {x: -0.004351186, y: 0.000000052095604, z: 2.2667976e-10, w: 0.9999905}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LRingTip
-      parentName: LRingMid
-      position: {x: 3.7303492e-16, y: -1.4210854e-16, z: 0.0342616}
-      rotation: {x: 0.795672, y: 0.50493866, z: -0.17927521, w: 0.28249496}
       scale: {x: 1, y: 1, z: 1}
     - name: LPinky
       parentName: LWrist
@@ -872,30 +782,135 @@ ModelImporter:
       position: {x: 8.881784e-16, y: 4.2632563e-16, z: 0.034260195}
       rotation: {x: 0.7956736, y: 0.5049389, z: -0.17927143, w: 0.28249264}
       scale: {x: 1, y: 1, z: 1}
-    - name: LIndex
+    - name: LRing
       parentName: LWrist
-      position: {x: 0.0226165, y: 4.2632563e-16, z: 0.094017886}
-      rotation: {x: -0.019953428, y: 0.0000012286347, z: 0.000000024520356, w: 0.9998009}
-      scale: {x: 0.95710343, y: 1, z: 1}
-    - name: LIndexMid
-      parentName: LIndex
-      position: {x: 2.6645352e-17, y: 1.4210854e-16, z: 0.035970166}
-      rotation: {x: -0.004333231, y: -1.387779e-17, z: -1.6653347e-16, w: 0.99999064}
+      position: {x: -0.024593899, y: 2.842171e-16, z: 0.094017886}
+      rotation: {x: -0.019944731, y: 0.0000012286349, z: 0.000000024509667, w: 0.9998011}
       scale: {x: 1, y: 1, z: 1}
-    - name: LIndexTip
-      parentName: LIndexMid
-      position: {x: 9.858781e-16, y: 0, z: 0.034260824}
-      rotation: {x: 0.7956704, y: 0.5049368, z: -0.1792771, w: 0.28250167}
+    - name: LRingMid
+      parentName: LRing
+      position: {x: -0, y: 0, z: 0.037582412}
+      rotation: {x: -0.004351186, y: 0.000000052095604, z: 2.2667976e-10, w: 0.9999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LRingTip
+      parentName: LRingMid
+      position: {x: 3.7303492e-16, y: -1.4210854e-16, z: 0.0342616}
+      rotation: {x: 0.795672, y: 0.50493866, z: -0.17927521, w: 0.28249496}
       scale: {x: 1, y: 1, z: 1}
     - name: LThumb
       parentName: LWrist
       position: {x: 0.0612095, y: -0.005049989, z: 0.035885204}
-      rotation: {x: 0.07145768, y: 0.3285389, z: 0.082730554, w: 0.9381426}
+      rotation: {x: 0.071457684, y: 0.32853892, z: 0.08273056, w: 0.93814266}
       scale: {x: 1, y: 1, z: 1}
     - name: LThumbTip
       parentName: LThumb
       position: {x: 2.220446e-18, y: -1.4210854e-16, z: 0.03180551}
       rotation: {x: 0.6857008, y: 0.17266876, z: 0.6857008, w: 0.17266876}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RShoulder
+      parentName: Clavicle
+      position: {x: 0.24127963, y: -0.104662746, z: -0.062389858}
+      rotation: {x: 0.39448214, y: 0.6068105, z: 0.3630166, w: 0.5868423}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RElbow
+      parentName: RShoulder
+      position: {x: -7.9936054e-17, y: 0, z: 0.344612}
+      rotation: {x: 0.009102434, y: -0.012928306, z: 0.037627205, w: 0.9991668}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RWrist
+      parentName: RElbow
+      position: {x: -7.105427e-17, y: -5.684342e-16, z: 0.3549598}
+      rotation: {x: -0.05698979, y: 0.038698636, z: -0.038901586, w: 0.99686575}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RIndex
+      parentName: RWrist
+      position: {x: -0.022616506, y: 0, z: 0.09401788}
+      rotation: {x: -0.019944679, y: -7.188694e-15, z: 2.3314684e-15, w: 0.9998011}
+      scale: {x: 0.95710343, y: 1, z: 1}
+    - name: RIndexMid
+      parentName: RIndex
+      position: {x: -5.3290704e-17, y: 4.2632563e-16, z: 0.035970643}
+      rotation: {x: -0.0043490627, y: -6.737667e-15, z: 2.3037132e-15, w: 0.9999906}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RIndexTip
+      parentName: RIndexMid
+      position: {x: -1.4210854e-16, y: 0, z: 0.034261063}
+      rotation: {x: -0.282496, y: -0.17927353, z: -0.5049381, w: 0.79567236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RMiddle
+      parentName: RWrist
+      position: {x: -6.217249e-17, y: 1.4210854e-16, z: 0.09401788}
+      rotation: {x: -0.019944679, y: -7.188694e-15, z: 2.303713e-15, w: 0.9998011}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RMiddleMid
+      parentName: RMiddle
+      position: {x: 8.881784e-18, y: 4.2632563e-16, z: 0.037582815}
+      rotation: {x: -0.0043490627, y: -6.9805277e-15, z: 1.9984017e-15, w: 0.9999906}
+      scale: {x: 1.1016257, y: 1, z: 1}
+    - name: RMiddleTip
+      parentName: RMiddleMid
+      position: {x: -2.8865798e-16, y: 4.2632563e-16, z: 0.037742864}
+      rotation: {x: -0.2792115, y: -0.18434732, z: -0.5192288, w: 0.7864213}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RPinky
+      parentName: RWrist
+      position: {x: 0.043948453, y: 1.4210854e-16, z: 0.09401788}
+      rotation: {x: -0.019944679, y: -7.181755e-15, z: 2.3314684e-15, w: 0.9998011}
+      scale: {x: 0.8764463, y: 1, z: 1}
+    - name: RPinkyMid
+      parentName: RPinky
+      position: {x: -0, y: 2.842171e-16, z: 0.03293932}
+      rotation: {x: -0.0043490627, y: -6.2450054e-15, z: 2.8310687e-15, w: 0.9999906}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RPinkyTip
+      parentName: RPinkyMid
+      position: {x: -4.2632563e-16, y: 5.684342e-16, z: 0.034261063}
+      rotation: {x: -0.282496, y: -0.17927353, z: -0.5049381, w: 0.79567236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RRing
+      parentName: RWrist
+      position: {x: 0.024593856, y: 1.4210854e-16, z: 0.09401788}
+      rotation: {x: -0.019944679, y: -7.077672e-15, z: 2.2759572e-15, w: 0.9998011}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RRingMid
+      parentName: RRing
+      position: {x: 1.7763568e-17, y: 4.2632563e-16, z: 0.037582815}
+      rotation: {x: -0.0043490627, y: -6.973589e-15, z: 1.9984017e-15, w: 0.9999906}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RRingTip
+      parentName: RRingMid
+      position: {x: -3.5527136e-17, y: -2.842171e-16, z: 0.034261063}
+      rotation: {x: -0.282496, y: -0.17927353, z: -0.5049381, w: 0.79567236}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RThumb
+      parentName: RWrist
+      position: {x: -0.061209545, y: -0.0050508515, z: 0.035885315}
+      rotation: {x: 0.07145748, y: -0.32853836, z: -0.08272667, w: 0.93814325}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RThumbTip
+      parentName: RThumb
+      position: {x: 8.881784e-18, y: 4.2632563e-16, z: 0.031804983}
+      rotation: {x: -0.17266226, y: 0.6857024, z: -0.17266226, w: 0.6857024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LHip
+      parentName: Core
+      position: {x: 0.112074, y: 0.05361735, z: -0.09436754}
+      rotation: {x: 5.823106e-17, y: 0.9988537, z: -0.047868267, w: -6.409323e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LKnee
+      parentName: LHip
+      position: {x: 1.0835777e-15, y: 1.7763568e-17, z: 0.44901955}
+      rotation: {x: -5.9462297e-19, y: -0.11053686, z: 0.99387205, w: 6.154375e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LAnkle
+      parentName: LKnee
+      position: {x: 5.3290704e-17, y: 2.2204459e-17, z: 0.368531}
+      rotation: {x: -9.972405e-16, y: -0.49617305, z: 0.86822367, w: -4.993777e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LToe
+      parentName: LAnkle
+      position: {x: -7.0219286e-10, y: 8.8817837e-17, z: 0.13313423}
+      rotation: {x: -0.6616452, y: -0.24944928, z: 0.6616461, w: 0.24944964}
       scale: {x: 1, y: 1, z: 1}
     - name: RHip
       parentName: Core
@@ -917,25 +932,10 @@ ModelImporter:
       position: {x: -7.105427e-17, y: -1.4210854e-16, z: 0.13313435}
       rotation: {x: 0.24944946, y: -0.66164565, z: -0.24944946, w: 0.66164565}
       scale: {x: 1, y: 1, z: 1}
-    - name: LHip
-      parentName: Core
-      position: {x: 0.112074, y: 0.05361735, z: -0.09436754}
-      rotation: {x: 5.823106e-17, y: 0.9988537, z: -0.047868267, w: -6.409323e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LKnee
-      parentName: LHip
-      position: {x: 1.0835777e-15, y: 1.7763568e-17, z: 0.44901955}
-      rotation: {x: -5.9462297e-19, y: -0.11053686, z: 0.99387205, w: 6.154375e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LAnkle
-      parentName: LKnee
-      position: {x: 5.3290704e-17, y: 2.2204459e-17, z: 0.368531}
-      rotation: {x: -9.972405e-16, y: -0.49617305, z: 0.86822367, w: -4.993777e-16}
-      scale: {x: 1, y: 1, z: 1}
-    - name: LToe
-      parentName: LAnkle
-      position: {x: -7.0219286e-10, y: 8.8817837e-17, z: 0.13313423}
-      rotation: {x: -0.6616452, y: -0.24944928, z: 0.6616461, w: 0.24944964}
+    - name: polySurface3
+      parentName: AmazingMan01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5

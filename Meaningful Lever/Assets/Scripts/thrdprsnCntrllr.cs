@@ -11,7 +11,7 @@ namespace CharControl
     public class ThrdprsnCntrllr : MonoBehaviour
     {
 
-        [SerializeField] float m_GroundCheckDistance = 0.1f;
+        [SerializeField] float m_GroundCheckDistance = 20.0f;
         [SerializeField] float m_JumpPower = 12f;
         [Range(1f, 4f)] [SerializeField] float m_GravityMultiplier = 2f;
 
@@ -52,8 +52,7 @@ namespace CharControl
             move = transform.InverseTransformDirection(move);
             CheckGroundStatus();
             move = Vector3.ProjectOnPlane(move, m_GroundNormal);
-            //m_TurnAmount = Mathf.Atan2(move.x, move.z);
-            //m_ForwardAmount = move.z;
+
 
             //movement will be identical in air or on ground but will have different animation handling
             if (m_IsGrounded)
@@ -102,10 +101,11 @@ namespace CharControl
         {
             if (jump && m_IsGrounded)
             {
+                Debug.Log("worked");
                 m_Animator.SetBool("jump", true);
                 m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
                 m_IsGrounded = false;
-                m_GroundCheckDistance = 0.1f;
+                m_GroundCheckDistance = 0.6f;
 
             }
         }
@@ -117,16 +117,19 @@ namespace CharControl
             // helper to visualise the ground check ray in the scene view
             Debug.DrawLine(transform.position + (Vector3.up * 0.1f), transform.position + (Vector3.up * 0.1f) + (Vector3.down * m_GroundCheckDistance));
 #endif
+
             // 0.1f is a small offset to start the ray from inside the character
             // it is also good to note that the transform position in the sample assets is at the base of the character
             if (Physics.Raycast(transform.position + (Vector3.up * 0.1f), Vector3.down, out hitInfo, m_GroundCheckDistance))
             {
+                Debug.Log("IF is good");
                 m_GroundNormal = hitInfo.normal;
                 m_IsGrounded = true;
                 //m_Animator.applyRootMotion = true;
             }
             else
             {
+                Debug.Log("if failed");
                 m_IsGrounded = false;
                 m_GroundNormal = Vector3.up;
                 //m_Animator.applyRootMotion = false;
