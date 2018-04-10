@@ -6,9 +6,12 @@ using UnityEditor;
 
 public class MapEditorScript : MonoBehaviour
 {
-    public GameObject[] m_paintType;
-    
-    public GameObject tileObj;
+    public GameObject[] m_paintSandStone;
+    public GameObject[] m_paintSand;
+
+    public int tileObj;
+
+    public bool paintSandStone = true;
     
     public uint mapLength;
     public uint mapWidth;
@@ -24,14 +27,14 @@ public class MapEditorScript : MonoBehaviour
         world.name = "World GameObject";
         world.tag = "World";
 
-        tileObj = m_paintType[1];
+        tileObj = 1;
 
 
         for (int x = 0; x < mapLength; x++)
         {
             for (int z = 0; z < mapWidth; z++)
             {
-                GameObject mapTile = Instantiate(tileObj, new Vector3(x * 3, 0, z * 3), Quaternion.identity);
+                GameObject mapTile = Instantiate(paintSandStone == true ? m_paintSandStone[tileObj] : m_paintSand[tileObj], new Vector3(x * 3, 0, z * 3), Quaternion.identity);
                 
                 mapTile.transform.SetParent(world.transform);
             }
@@ -52,27 +55,27 @@ public class MapEditorScript : MonoBehaviour
     
     public void SetPaintTypeEmptyTile()
     {
-        tileObj = m_paintType[0];
+        tileObj = 0;
     }
 
     public void SetPaintTypeFloorTile()
     {
-        tileObj = m_paintType[1];
+        tileObj = 1;
     }
 
     public void SetPaintTypeWALLTile()
     {
-        tileObj = m_paintType[2];
+        tileObj = 2;
     }
 
     public void SetPaintTypeWALLFONTTile()
     {
-        tileObj = m_paintType[3];
+        tileObj = 3;
     }
 
     public void SetPaintTypeDoorTile()
     {
-        tileObj = m_paintType[4];
+        tileObj = 4;
     }
     
     public void Paint()
@@ -86,7 +89,7 @@ public class MapEditorScript : MonoBehaviour
             {
                 if (Event.current.button == 0)
                 {
-                    GameObject go = Instantiate(tileObj, hit.collider.transform.position, Quaternion.identity);
+                    GameObject go = Instantiate(paintSandStone == true ? m_paintSandStone[tileObj] : m_paintSand[tileObj], hit.collider.transform.position, Quaternion.identity);
                     go.transform.SetParent(world.transform);
 
                     Transform topTransform = hit.transform.parent != null ? hit.transform.parent : hit.transform;
@@ -99,7 +102,8 @@ public class MapEditorScript : MonoBehaviour
                 }
                 else
                 {
-                    GameObject go = Instantiate(tileObj, new Vector3(hit.point.x + ((hit.point.x % 3) > 1.5f ?  3- hit.point.x % 3 : 0 - hit.point.x % 3), 
+                    GameObject go = Instantiate(paintSandStone == true ? m_paintSandStone[tileObj] : m_paintSand[tileObj], 
+                                                                    new Vector3(hit.point.x + ((hit.point.x % 3) > 1.5f ?  3- hit.point.x % 3 : 0 - hit.point.x % 3), 
                                                                     hit.point.y  + ( 0 - (hit.point.y % 3)), 
                                                                     hit.point.z + ((hit.point.z % 3) > 1.5f ? 3 - hit.point.z % 3 : 0 - hit.point.z % 3)),
                                                                     Quaternion.identity);
