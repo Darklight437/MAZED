@@ -77,6 +77,7 @@ namespace CharControl
 
 
 
+
             //now move character by physics
 
 
@@ -101,6 +102,7 @@ namespace CharControl
         {
             if (jump && m_IsGrounded)
             {
+                m_Animator.SetBool("jump", true);
                 m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
                 m_IsGrounded = false;
                 m_GroundCheckDistance = 0.1f;
@@ -121,13 +123,13 @@ namespace CharControl
             {
                 m_GroundNormal = hitInfo.normal;
                 m_IsGrounded = true;
-                m_Animator.applyRootMotion = true;
+                //m_Animator.applyRootMotion = true;
             }
             else
             {
                 m_IsGrounded = false;
                 m_GroundNormal = Vector3.up;
-                m_Animator.applyRootMotion = false;
+                //m_Animator.applyRootMotion = false;
             }
         }
 
