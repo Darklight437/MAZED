@@ -305,8 +305,8 @@ MonoBehaviour:
   - {fileID: 1991463332282014, guid: 723fee99afee7a54e8dcd95f4199b4dd, type: 2}
   - {fileID: 1120999464619112, guid: 94267b32a6195a4458ad0f4ba5df4374, type: 2}
   - {fileID: 1494631535127812, guid: 7132dc44f130f31488609d8b56d7ac68, type: 2}
-  tileObj: {fileID: 1494631535127812, guid: 7132dc44f130f31488609d8b56d7ac68, type: 2}
-  mapLength: 3
-  mapWidth: 3
+  tileObj: {fileID: 1553410690384950, guid: 22c8981800af8ab40a768b19548f4692, type: 2}
+  mapLength: 7
+  mapWidth: 7
   world: {fileID: 0}
   enablePaint: 1
