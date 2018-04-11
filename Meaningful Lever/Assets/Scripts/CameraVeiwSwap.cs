@@ -7,6 +7,7 @@ public class CameraVeiwSwap : MonoBehaviour
     public Camera cam;
     public GameObject player;
 
+    public float size;
     public Transform thirdPerson;
     public Transform topDown;
 
@@ -23,6 +24,7 @@ public class CameraVeiwSwap : MonoBehaviour
     {
         cam = Camera.main;
         m_timeSpentLerping = 1.2f;
+        
 
         if (isTopDown == false)
         {
@@ -35,6 +37,7 @@ public class CameraVeiwSwap : MonoBehaviour
             cam.transform.position = topDown.position;
             cam.transform.rotation = topDown.rotation;
             cam.orthographic = true;
+            cam.orthographicSize = size;
         }
 	}
 	

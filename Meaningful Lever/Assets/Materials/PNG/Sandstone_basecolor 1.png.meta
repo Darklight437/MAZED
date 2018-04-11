@@ -1,6 +1,12 @@
 fileFormatVersion: 2
-guid: 407dcfdb65d20b343bf8227e5f242f36
+<<<<<<< HEAD:Meaningful Lever/Assets/Materials/PNG/Sandstone_ambientocclusion.png.meta
+guid: d3883c5bb2a98e1429d334621e82ecbc
 timeCreated: 1523406589
+=======
+guid: 3a65d972e4e0bca44bdb7b7b293f04da
+timeCreated: 1523404012
+licenseType: Free
+>>>>>>> 890c5b98d461be89b57906f808f42fafff3a9684:Meaningful Lever/Assets/Materials/PNG/Sandstone_basecolor 1.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}

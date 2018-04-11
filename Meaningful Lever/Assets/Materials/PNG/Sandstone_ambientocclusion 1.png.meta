@@ -1,6 +1,12 @@
 fileFormatVersion: 2
-guid: cea0b4f7cb1bf684dad6443f44a0685c
+<<<<<<< HEAD:Meaningful Lever/Assets/Materials/PNG/Sandstone_height.png.meta
+guid: f6dcb58d78a17c34a9028480ea30ad4a
 timeCreated: 1523406589
+=======
+guid: c131d71548773724ab8614ba4931ec14
+timeCreated: 1523404013
+licenseType: Free
+>>>>>>> 890c5b98d461be89b57906f808f42fafff3a9684:Meaningful Lever/Assets/Materials/PNG/Sandstone_ambientocclusion 1.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
