@@ -104,7 +104,9 @@ public class CharacterControllerScript : MonoBehaviour
             //Debug.Log("I AM JUMPING!!! :D");
         }
         
-        m_moveDirection.y -= gravity * Time.deltaTime;
+        //m_moveDirection.y = 60;
+
+		transform.position = new Vector3(transform.position.x, 0, transform.position.z);
 
         if ((m_moveDirection.x != 0) || (m_moveDirection.z != 0))
         {
@@ -122,6 +124,8 @@ public class CharacterControllerScript : MonoBehaviour
         {
             animator.SetBool("run", false);
         }
+
+
         
     }
 }
