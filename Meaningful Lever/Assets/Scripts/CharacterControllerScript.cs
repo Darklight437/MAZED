@@ -9,12 +9,13 @@ public class CharacterControllerScript : MonoBehaviour
 
     CameraVeiwSwap cam;
 
-    public float rotationRate = 0.15f;
+    
     public float Speed;
     public float jumpSpeed;
-    public float rotationSpeed;
+    public float rotationSpeed = 0.15f;
     Animator animator;
     public float gravity;
+    
     
     CharacterController cc = null;
 
@@ -29,14 +30,62 @@ public class CharacterControllerScript : MonoBehaviour
 
     private void Update()
     {
-        Move();
+
+        if(cam.isTopDown)
+        {
+            Move();
+        }
+        else
+        {
+            ThirdprsnMove();
+        }
+        
+
+
+
     }
+
+    private void ThirdprsnMove()
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        
+        if (cc.isGrounded)
+        {
+            animator.SetBool("run", true);
+            transform.Rotate(new Vector3(0, horizontal * rotationSpeed, 0));
+            m_moveDirection = new Vector3(0, transform.position.y, vertical);
+            m_moveDirection = Camera.main.transform.TransformDirection(m_moveDirection);
+            m_moveDirection *= Speed;
+        }
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+            m_moveDirection.y = jumpSpeed;
+            animator.SetBool("jump", true);
+        }
+
+        m_moveDirection.y -= gravity * Time.deltaTime;
+        Debug.Log(m_moveDirection);
+        cc.Move(m_moveDirection * Time.deltaTime);
+
+        if (cc.isGrounded)
+        {
+            animator.SetBool("jump", false);
+        }
+
+        if ((m_moveDirection.x == 0) && (m_moveDirection.z == 0))
+        {
+            animator.SetBool("run", false);
+        }
+    }
+
 
     private void Move()
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        float turn = Input.GetAxis("Turn");
+        
         
         if (cc.isGrounded)
         {
@@ -46,23 +95,16 @@ public class CharacterControllerScript : MonoBehaviour
             //m_moveDirection = camera.transform.TransformDirection(m_moveDirection);
             m_moveDirection *= Speed;
 
-            if (Input.GetKey(KeyCode.Space))
-            {
-                m_moveDirection.y = jumpSpeed;
-                animator.SetBool("jump", true);
-            }
+            
         }
         else
         {
             m_moveDirection = new Vector3(horizontal, m_moveDirection.y, vertical);
-            //m_moveDirection = camera.transform.TransformDirection(m_moveDirection);
             m_moveDirection.x *= Speed;
             m_moveDirection.z *= Speed;
             //Debug.Log("I AM JUMPING!!! :D");
         }
-
-       // transform.Rotate(0, turn * rotationSpeed, 0);
-
+        
         m_moveDirection.y -= gravity * Time.deltaTime;
 
         if ((m_moveDirection.x != 0) || (m_moveDirection.z != 0))
