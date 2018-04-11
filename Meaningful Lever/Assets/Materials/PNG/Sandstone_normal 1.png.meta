@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Meaningful Lever/Assets/Materials/PNG/Sandstone_normal.png.meta
-guid: 407dcfdb65d20b343bf8227e5f242f36
-timeCreated: 1523406589
-=======
-guid: 6c181a7b1a3c7154c909ead6034b7041
-timeCreated: 1523404064
-licenseType: Free
->>>>>>> 890c5b98d461be89b57906f808f42fafff3a9684:Meaningful Lever/Assets/Materials/PNG/Sandstone_normal 1.png.meta
+guid: 67d75224537bcbd4c85870804ff8973c
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
