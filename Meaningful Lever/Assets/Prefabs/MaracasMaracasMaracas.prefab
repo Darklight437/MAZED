@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4455502337140624}
   - component: {fileID: 33619990949824520}
   - component: {fileID: 23997517277671868}
-  - component: {fileID: 95396474976995486}
   - component: {fileID: 135769192630259338}
   m_Layer: 9
   m_Name: MaracasMaracasMaracas
@@ -36,8 +35,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1059048461773806}
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: -6.123234e-17}
-  m_LocalPosition: {x: 69.269714, y: -53.184, z: 43.24299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 7.4056926, y: 20.116953, z: 7.4056926}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,23 +83,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1059048461773806}
   m_Mesh: {fileID: 4300000, guid: db68da7b753be5a42a7384d94b2d1be7, type: 3}
---- !u!95 &95396474976995486
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1059048461773806}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: db68da7b753be5a42a7384d94b2d1be7, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!135 &135769192630259338
 SphereCollider:
   m_ObjectHideFlags: 1
