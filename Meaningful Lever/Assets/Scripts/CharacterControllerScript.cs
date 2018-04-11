@@ -66,7 +66,6 @@ public class CharacterControllerScript : MonoBehaviour
         }
 
         m_moveDirection.y -= gravity * Time.deltaTime;
-        Debug.Log(m_moveDirection);
         cc.Move(m_moveDirection * Time.deltaTime);
 
         if (cc.isGrounded)

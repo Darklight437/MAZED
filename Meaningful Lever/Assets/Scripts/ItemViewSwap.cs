@@ -10,7 +10,7 @@ public class ItemViewSwap : MonoBehaviour
         if (collision.gameObject.tag == "ThrownItem")
         {
             Camera.main.GetComponent<CameraVeiwSwap>().SwapCameraView();
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
     }
 

@@ -6,18 +6,35 @@ public class ThrowItem : MonoBehaviour
 {
     public GameObject throwItem;
     public float force;
-	void Update ()
-    {
+    public float throwheignt;
+    private float throwOffset = 0.35f;
+    private Animator animator;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        animator.SetBool("throw", false);
+        if (Input.GetMouseButtonDown(0))
+        {
+            
+            animator.SetBool("aim", true);
+           
+        }
         if (Input.GetMouseButtonUp(0))
         {
-            Vector3 dir = Camera.main.ScreenPointToRay(Input.mousePosition).direction.normalized;
-
-            GameObject go = Instantiate(throwItem, new Vector3(transform.position.x + dir.x, transform.position.y + dir.y, transform.position.z + dir.z), Quaternion.identity);
-            go.tag = "ThrownItem";
-            go.GetComponent<Rigidbody>().velocity = dir * force;
-            Debug.Log(new Vector3(transform.position.x - dir.normalized.x, transform.position.y + dir.normalized.y, transform.position.z - dir.normalized.z));
+            animator.SetBool("throw", true);
+            animator.SetBool("aim", false);
         }
+    }
 
-	}
+    public void Throwball()
+    {
+        GameObject go = Instantiate(throwItem, new Vector3(transform.position.x + throwOffset, transform.position.y + throwheignt, transform.position.z), Quaternion.identity);
+        go.tag = "ThrownItem";
+        go.GetComponent<Rigidbody>().velocity = transform.forward * force;
+    }
 }
